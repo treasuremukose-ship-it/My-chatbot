@@ -1,8 +1,7 @@
-from dotenv import load_dotenv
+
 from google.genai import types
 import gradio as gr
 
-load_dotenv()
 
 import os
 
