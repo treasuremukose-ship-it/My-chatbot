@@ -32,7 +32,7 @@ def respond(message, history):
 for model_name in MODELS:
     try:
         chat = client.chats.create(
-            model="model_name, 
+            model=model_name, 
             history= formatted_history, 
             config= types.GenerateContentConfig(
                 thinking_config= types.Thinking.Config(thinking_budget=0)
@@ -57,5 +57,6 @@ for model_name in MODELS:
             return
 
     yield "⏳ All models are temporarily busy right now. Please send your message again in a few seconds."
+
 
 
