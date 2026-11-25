@@ -7,7 +7,7 @@ import gradio as gr
 client = genai.Client()
 
 # 1. Valid models (automatically switches to the next if one has a 503 traffic spike)
-MODELS = ["gemini-2.5-flash-lite", "gemini-2.5-flash", "gemini-2.0-flash"]
+MODELS = ["gemini-3.8-flash-lite", "gemini-3.8-flash", "gemini-3.0-flash"]
 
 def respond(message, history):
     # 2. Safely rebuild conversation memory across all Gradio versions
